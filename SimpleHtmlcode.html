@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Simple Html code</title>
+
+    <style>
+
+       #para1{
+            color:rgba(225, 6, 181, 0.597);
+            font-family:'Gill Sans';
+            font-size: large;
+        }
+        .divtag{
+            text-align: center;
+            color: rgb(227, 42, 5);
+        }
+    </style>
+</head>
+<body style="background-color:aqua">
+
+<marquee direction="right" behavior="alternate" scrollamount="30px">
+    <p style="color:orange; font-size:40px; ">Try to Understand </p>
+</marquee>
+
+<marquee direction="left" behavior="slide" scrollamount="20px">
+    <p style="color:blue; font-size:40px; ">Try to Understand </p>
+</marquee>
+
+<marquee direction="right" behavior="" scrollamount="30px">
+    <p style="color:rgb(239, 238, 252); font-size:40px; ">Try to Understand </p>
+</marquee>
+
+    <div class="divtag" >
+    <h1>ALL ATTRIBUTE INPUT TAG</h1>
+        <p  id="para1">Using html and javascript Click button show the  paragraph Change</p>
+        <p id="para">Hello World !</p>
+
+   <button type="button" onclick="getElementById('para').innerHTML='Change paragraph'">Change paragraph Button</button><br><br>
+   <input type="button" onclick="alert('Alter Attribute!')" value="Click"> <br><br>
+
+  <label for="appt">Select a time:</label>
+  <input type="time" id="appt" name="appt"><br><br>
+  <label for="vol">Volume (between 0 and 50):</label>
+  <input type="range" id="vol" name="vol" min="0" max="50">
+
+
+  <label for="bdaymonth">Birthday (month and year):</label>
+  <input type="month" id="bdaymonth" name="bdaymonth">
+ 
+    <p id="para2">Show Date</p>
+     <button type="button" onclick="getElementById('para2').innerHTML=Date()">Click me!</button><br><br>
+     <p id="para3">paragraph_color Change </p>
+      <button type="button" onclick="document.getElementById('para3').style.fontColor='orange'">Change_color</button><br><br>
+
+   <p id="demo">JavaScript can change the style of an HTML element.</p>
+   <button type="button" onclick="document.getElementById('demo').style.fontSize='100px'">Click Me!</button>
+</div>
+</body>
+</html>
